@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Название сайта</title>
+    <link rel="stylesheet" href="src/scss/style-for-uppermiddle.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">Название сайта</a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#">Главная</a></li>
+            <li class="menu__item"><a href="#">О нас</a></li>
+            <li class="menu__item"><a href="#">Наши услуги</a></li>
+            <li class="menu__item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- about section -->
+    <section class="about">
+      <div class="container">
+        <div class="about__content">
+          <div class="about__image">
+            <img src="https://via.placeholder.com/250x250" alt="Фото" />
+          </div>
+          <div class="about__text">
+            <h2 class="about__title">Обо мне</h2>
+            <p class="about__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+              nemo, facilis quaerat, possimus vero sunt, ut fugit provident,
+              ipsa dolor cupiditate a! Quaerat dolorum eligendi, molestias
+              laudantium cum veniam non.
+            </p>
+            <a href="#" class="btn btn__feedback">Обратная связь</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills section -->
+    <section class="skills">
+      <div class="container">
+        <h2 class="skills__title">Мои компетенции</h2>
+        <ul class="skills__list">
+          <li class="skills__item">HTML</li>
+          <li class="skills__item">CSS</li>
+          <li class="skills__item">JavaScript</li>
+          <li class="skills__item">React</li>
+          <li class="skills__item">Node.js</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- portfolio section -->
+    <section class="portfolio">
+      <div class="container">
+        <h2 class="portfolio__title">Моё портфолио</h2>
+        <div class="portfolio__list">
+          <div class="portfolio__item">
+            <img
+              src="https://via.placeholder.com/350x200"
+              alt="Пример работы"
+            />
+            <h3 class="portfolio__item-title">Пример работы</h3>
+          </div>
+          <div class="portfolio__item">
+            <img
+              src="https://via.placeholder.com/350x200"
+              alt="Пример работы"
+            />
+            <h3 class="portfolio__item-title">Пример работы</h3>
+          </div>
+          <div class="portfolio__item">
+            <img
+              src="https://via.placeholder.com/350x200"
+              alt="Пример работы"
+            />
+            <h3 class="portfolio__item-title">Пример работы</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- special offer section -->
+    <section class="special-offer">
+      <div class="container">
+        <h2 class="special-offer__title">Специальное предложение</h2>
+        <p class="special-offer__description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus,
+          odio!
+        </p>
+        <a href="#" class="btn btn__offer">Подробнее</a>
+      </div>
+    </section>
+
+    <!-- reviews section -->
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__list">
+          <div class="reviews__item">
+            <blockquote class="reviews__quote">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+              nobis libero, quis odio earum possimus laboriosam velit voluptatum
+              numquam accusantium.
+            </blockquote>
+            <cite class="reviews__author">John Doe</cite>
+          </div>
+          <div class="reviews__item">
+            <blockquote class="reviews__quote">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+              nobis libero, quis odio earum possimus laboriosam velit voluptatum
+              numquam accusantium.
+            </blockquote>
+            <cite class="reviews__author">Jane Doe</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact">
+      <div class="container">
+        <h2 class="contact__title">Оставьте сообщение</h2>
+        <form class="contact__form" action="/" method="post" novalidate>
+          <div class="contact__form-group">
+            <label for="name" class="contact__label">Имя</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="contact__input"
+              required
+            />
+            <div class="contact__input-error">Поле не должно быть пустым</div>
+          </div>
+          <div class="contact__form-group">
+            <label for="email" class="contact__label">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="contact__input"
+              required
+            />
+            <div class="contact__input-error">
+              Пожалуйста, введите корректный email
+            </div>
+          </div>
+          <div class="contact__form-group">
+            <label for="message" class="contact__label">Сообщение</label>
+            <textarea
+              id="message"
+              name="message"
+              class="contact__textarea"
+              required
+            ></textarea>
+            <div class="contact__input-error">Поле не должно быть пустым</div>
+          </div>
+          <button type="submit" class="btn btn__submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2023 Все права защищены</p>
+      </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

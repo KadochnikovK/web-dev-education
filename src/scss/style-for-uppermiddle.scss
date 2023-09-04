@@ -1,0 +1,290 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Default styles */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Header styles */
+.header {
+  background-color: #fff;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.14);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.header .menu__list li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* About styles */
+.about {
+  padding: 100px 0;
+  background-color: #f4f4f4;
+}
+
+.about__content {
+  display: flex;
+  align-items: center;
+}
+
+.about__image {
+  margin-right: 50px;
+}
+
+.about__title {
+  margin-bottom: 30px;
+}
+
+.about__description {
+  margin-bottom: 40px;
+}
+
+.about__image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.14);
+}
+
+/* Skills styles */
+.skills {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.skills__title {
+  margin-bottom: 30px;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills__item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  color: #333;
+  border-radius: 30px;
+}
+
+/* Portfolio styles */
+.portfolio {
+  padding: 100px 0;
+  background-color: #f4f4f4;
+}
+
+.portfolio__title {
+  margin-bottom: 30px;
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio__item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: calc((100% / 3) - 20px);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio__item h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  margin: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.portfolio__item h3:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+/* Special offer styles */
+.special-offer {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.special-offer__title {
+  margin-bottom: 20px;
+}
+
+.special-offer__description {
+  margin-bottom: 30px;
+}
+
+/* Reviews styles */
+.reviews {
+  padding: 100px 0;
+  background-color: #f4f4f4;
+}
+
+.reviews__title {
+  margin-bottom: 40px;
+}
+
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews__item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: calc((100% / 2) - 20px);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.14);
+}
+
+.reviews__quote {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.reviews__author {
+  font-weight: bold;
+  display: block;
+}
+
+/* Contact styles */
+.contact {
+  padding: 100px 0;
+  background-color: #f4f4f4;
+}
+
+.contact__title {
+  margin-bottom: 40px;
+}
+
+.contact__form-group {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.contact__label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact__input,
+.contact__textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.contact__input-error {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  font-size: 12px;
+  color: red;
+  display: none;
+}
+
+.contact__input:invalid + .contact__input-error {
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn__feedback {
+  margin-top: 20px;
+}
+
+.btn__offer {
+  margin-top: 30px;
+}
+
+.btn__submit {
+  margin-top: 30px;
+}

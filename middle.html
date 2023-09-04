@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ru">
+    <meta charset="UTF-8" />
+    <title>Моя веб-страница</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Ссылка 1</a></li>
+          <li><a href="#">Ссылка 2</a></li>
+          <li><a href="#">Ссылка 2</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Это мое портфолио</h1>
+
+      <section>
+        <h2>Информация обо мне</h2>
+        <img src="src/img/cat.jpg" height="300px" alt="Мое фото" />
+        <p>Здесь можно написать информацию о себе.</p>
+      </section>
+      <section>
+        <h2>Список компетенций</h2>
+        <ul>
+          <li>Навык 1</li>
+          <li>Навык 2</li>
+          <li>Навык 3</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Портфолио</h2>
+        <div class="gallery">
+          <img src="src/img/cat_01.jpg" height="300px" alt="Пример работы 1" />
+          <img src="src/img/cat_02.jpg" height="300px" alt="Пример работы 2" />
+          <img src="src/img/cat_03.jpg" height="300px" alt="Пример работы 3" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Форма обратной связи</h2>
+        <form action="#">
+          <label for="name">Имя:</label>
+          <input type="text" id="name" />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" />
+
+          <label for="topic">Тема сообщения:</label>
+          <select id="topic">
+            <option value="question">Вопрос</option>
+            <option value="feedback">Отзыв</option>
+            <option value="other">Другое</option>
+          </select>
+
+          <label for="message">Сообщение:</label>
+          <textarea id="message"></textarea>
+
+          <label for="subscribe">Подписаться на новости:</label>
+          <input type="checkbox" id="subscribe" />
+
+          <input type="submit" value="Отправить" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Копирайт © 2023 год</p>
+    </footer>
+  </body>
+</html>
